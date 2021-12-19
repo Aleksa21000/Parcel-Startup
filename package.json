@@ -1,0 +1,33 @@
+{
+  "name": "parcel_starter",
+  "version": "1.0.0",
+  "description": "Setuped workflow for building vanilla JS projects",
+  "browserslist": "last 4 version",
+  "scripts": {
+    "dev": "npm run clean && parcel public/index.html --dist-dir development -p 3000",
+    "build": "rimraf ./dist && parcel build public/*.html --dist-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf ./.parcel-cache"
+  },
+  "keywords": [
+    "parcel"
+  ],
+  "author": "Aleksa Radulovic",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/runtime-corejs2": "^7.16.5",
+    "@parcel/transformer-sass": "^2.0.1",
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss-modules": "^4.2.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.45.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  }
+}
