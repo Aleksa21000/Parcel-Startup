@@ -1,0 +1,34 @@
+@mixin mq($value, $constraint: max, $feature: width) {
+  @media screen and (#{$constraint}-#{$feature}: $value + px) {
+    @content;
+  }
+}
+
+@mixin font-smoothing($val: antialiased) {
+  -webkit-font-smoothing: $val;
+  -moz-font-smoothing: $val;
+  -ms-font-smoothing: $val;
+  -o-font-smoothing: $val;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin hover {
+  @media only screen and (min-width: 1080px) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin landscape() {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
