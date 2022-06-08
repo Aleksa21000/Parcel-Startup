@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My app || Homepage</title>
-</head>
-    <body class="dark">
-        <div id="navigation"></div>
-        <div class="container container--inner">
-            <div id="box"></div>
-        </div>
-        <div class="container">
-            <a class="btn" href="about.html">About</a>
-        </div>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../src/scss/app.scss">
+        <title>Parcel Startup</title>
+    </head>
+    <body>
+        <section class="test-slider">
+            <div class="swiper t_slider | js-t-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide t_slide">
+                        <img src="./uploads/urban-environment.jpg" alt="test image">
+                    </div>
+                    <div class="swiper-slide t_slide">
+                        <img src="./uploads/urban-environment.jpg" alt="test image">
+                    </div>
+                    <div class="swiper-slide t_slide">
+                        <img src="./uploads/urban-environment.jpg" alt="test image">
+                    </div>
+                    <div class="swiper-slide t_slide">
+                        <img src="./uploads/urban-environment.jpg" alt="test image">
+                    </div>
+                </div>
+                <div class="t_swiper-bottom">
+                    <div class="swiper-button-next t_btn-next"></div>
+                    <div class="swiper-button-prev t_btn-prev"></div>
+                    <div class="swiper-pagination t_pagination"></div>
+                </div>
+        </section>
+
         <script type="module" src="../src/app.js"></script>
     </body>
 </html>

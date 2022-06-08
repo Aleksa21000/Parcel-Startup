@@ -1,0 +1,28 @@
+// Core style      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+a{
+    text-decoration: none;
+}
+  
+li{
+    list-style: none;
+}
+
+// Containers
+.container {
+    padding: 0 80px;
+
+    @include mq(1440) {
+        padding: 0 40px;
+    }
+
+    @include mq(650) {
+        padding: 0 20px;
+    }
+}

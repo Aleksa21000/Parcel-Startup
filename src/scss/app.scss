@@ -1,5 +1,6 @@
 @import 'mixins';
-@import 'components/global';
+@import 'variables';
+@import 'fonts';
+@import 'global';
 
-@import 'components/nav';
-@import 'components/box';
+@import './components/test-slider';

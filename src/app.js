@@ -1,13 +1,9 @@
-import './scss/app.scss';
+import 'swiper/swiper-bundle.css';
 
-import Nav from './components/Navigation';
-import Box from './components/Box';
+import slider from './components/slider';
 
 const app = () => {
-    document.querySelector('#navigation').innerHTML = Nav();
-    document.querySelectorAll('#box').forEach(function(box) {
-        box.innerHTML = Box();
-    });
+    slider();
 }
 
 app();
